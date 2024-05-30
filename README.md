@@ -1,4 +1,4 @@
-# Convert-a-Chromebook-Debian-host-system-to-latest-version-of-Kali-Linux-host-system-Fully-automated-
+# Convert-a-Chromebook-Debian-host-system-to-latest-version-of-Kali-Linux-host-system-Fully-automated
 The provided file:
 
   *'chromebook_kali_config.sh'*
