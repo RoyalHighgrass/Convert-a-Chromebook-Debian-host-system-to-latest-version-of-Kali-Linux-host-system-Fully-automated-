@@ -16,13 +16,13 @@ Although designed for Chromebook users, it is very possible that it will work fi
 
 3 - Execute file. ( **./chromebook_kali_config.sh** ).
 **note** - The entire process of a full host system conversion can take up to 3 hours or more depending on your system specs.
-**note** - User inputs regarding system configurations required roughly about an hour into the process. The process will be paused until user inputs are provided. Once provided the process will continue for at least another hour. Once complete, shutdown or logout of linux.
+**note** - User inputs regarding system configurations required at the start & roughly about an hour into the process. The process will be paused until user inputs are provided. Once provided the process will continue for at least another hour. Once complete, shutdown linux.
 
 4 - Shutdown device.
 
 5 - Turn on device.
 **note** - None Chromebook users are likely to be taken straight to the *kali xfce4 desktop*, although this is where any problems are likely to occur.
-**note** - Start Penguin if using a Chromebook. Launch kali xfce4 desktop with *gox* command. ( **gox** ).
-**note** - Once the *xfce4 desktop* has launched, click on the menu button & search for '**Synaptic Package Manager**', right click on it & select '*Edit application*'. Replace existing command with '*gox_lauch*'. Click save. Now SPM can be used to install & uninstall packages.
+**note** - Start Penguin if using a Chromebook. Launch kali xfce4 desktop with *gox* terminal command. ( **gox** ).
+**note** - Once the *xfce4 desktop* has launched, click on the menu button & search for '**Synaptic Package Manager**', right click on it & select '*Edit application*'. Replace existing command with '*gox_lauch*'. Click save. Now *SPM* can properly be used to install & uninstall packages.
 
-6 - Shutdown kali xfce4 desktop with *xgo* command. ( **xgo** ). *Shutdown linux normally*.
+6 - Shutdown kali xfce4 desktop with *xgo* terminal command. ( **xgo** ). *Shutdown linux normally*.
