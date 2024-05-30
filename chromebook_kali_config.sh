@@ -119,7 +119,7 @@ sleep 5
 
 ### Install Kali base system utilities.
 echo " "
-echo "Installing Kali base system utilities..."
+echo "Installing Kali base system utilities...(this may likely take a while)..."
 echo " "
 sudo apt -y install tor traceroute xdotool iputils-ping
 sudo apt install kali-tools-crypto-stego -y
