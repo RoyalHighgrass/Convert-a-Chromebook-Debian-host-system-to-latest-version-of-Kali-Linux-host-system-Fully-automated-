@@ -30,4 +30,4 @@ Although designed for Chromebook users, it is very possible that it will work fi
 **note** - Start Penguin if using a Chromebook. Launch kali xfce4 desktop with *gox* terminal command. ( **gox** ).
 **note** - Once the *xfce4 desktop* has launched, click on the menu button & search for '**Synaptic Package Manager**', right click on it & select '*Edit application*'. Replace existing command with '*gox_lauch*'. Click save. Now *SPM* can properly be used to install & uninstall packages.
 
-6 - Shutdown kali xfce4 desktop with *xgo* terminal command. ( **xgo** ). *Shutdown linux normally*.
+6 - Shutdown kali xfce4 desktop with *xgo* terminal command. ( **xgo** ). Alternatively, for none Chromebook users, your device may allow you to *shutdown linux normally*.
