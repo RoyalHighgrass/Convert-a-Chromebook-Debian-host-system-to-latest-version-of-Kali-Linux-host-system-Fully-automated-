@@ -1,10 +1,23 @@
 #!/bin/bash
 
-### Elevate privileges with su to avoid installation errors ###
+### Elevate privileges with 'sudo su' to avoid installation errors ###
+
+# Get username
+read -p "Enter your username: " get_new_username_input
+
+# Get the output of lsb_release -a
+lsb_output=$(lsb_release -a)
+
+# Extract the required fields
+distributor_id=$(echo "$lsb_output" | grep "Distributor ID:")
+release=$(echo "$lsb_output" | grep "Release:")
+
+# Construct the desired output
+hs="$distributor_id-$release"
 
 ### Update repository sources
 echo " "
-echo "Updating repository sources..."
+echo "Convert repository sources from $hs to Kali linux (kali-rolling)..."
 echo " "
 
 # Path to the sources.list file
@@ -17,7 +30,7 @@ temp_file=$(mktemp)
 {
     cat "$sources_list" | sed 's/^/#/'; 
     echo " ";
-    echo "# Updating repository sources...";
+    echo "# Convert repository sources from $hs to Kali linux (kali-rolling)...";
     echo "deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware";
 	echo " ";
 	echo "# Additional line for source packages";
@@ -58,13 +71,13 @@ sudo apt install xserver-xephyr -y
 
 sleep 30
 
-### Create /usr/bin/gox file (replace 'username' with your actual username).
+### Create /usr/bin/gox file ('$get_new_usrname_input' automatically replaced with username provided at the start).
 echo " "
 echo "Creating /usr/bin/gox..."
 sudo tee /usr/bin/kld > /dev/null << 'EOF'
 Xephyr -br -fullscreen -resizeable :20 &
 sleep 1
-sudo -u username DISPLAY=:20 startxfce4 &> /dev/null &
+sudo -u $get_new_username_input DISPLAY=:20 startxfce4 &> /dev/null &
 EOF
 
 sleep 1.5
