@@ -98,10 +98,11 @@ echo " "
 echo "Making /usr/bin/gox & /usr/bin/gox_launch executable..."
 echo " "
 sudo chmod +x /usr/bin/gox /usr/bin/gox_launch
+#sudo echo "gox" >> ~/.bashrc 
 
 sleep 2
 
-### Set 'xgo' command for shutting down the Kali Xfce4 Desktop.
+### Set  'xgo' command for shutting down the Kali Xfce4 Desktop.
 echo " "
 echo "Setting 'xgo' command for shutting down the Kali Xfce4 Desktop..."
 sudo echo " " >> ~/.bashrc 
@@ -134,17 +135,11 @@ echo "Installing useful linux packages..."
 echo " "
 sudo apt -y install nano curl pip tree cmatrix fping net-tools qemu-kvm qemu-system qemu-utils python3 python3-pip libvirt-clients libvirt-daemon-system bridge-utils virtinst libvirt-daemon ovmf build-essential libncurses-dev bison flex libssl-dev libelf-dev dirmngr gnupg gnupg2 apt-transport-https libosinfo-bin libguestfs-tools cockpit cockpit-machines samba vde2 imvirt imvirt-helper imvirt-helper xclip xsel uuid oz hping3 macchanger
 
-sleep 1
-
-echo " "
-echo "Making /usr/bin/kld & /usr/bin/kld_launch executable..."
-echo " "
-
 sleep 2
 
 ### Update & upgrade the system.
 echo " "
-echo "Making /usr/bin/kld & /usr/bin/kld_launch executable..."
+echo "Updating & upgrading the system..."
 echo " "
 sudo apt update
 sudo apt upgrade -y
