@@ -86,6 +86,14 @@ echo "Making /usr/bin/gox & /usr/bin/gox_launch executable..."
 echo " "
 sudo chmod +x /usr/bin/gox /usr/bin/gox_launch
 
+sleep 2
+
+### Set 'xgo' command for shutting down the Kali Xfce4 Desktop.
+echo " "
+echo "Setting 'xgo' command for shutting down the Kali Xfce4 Desktop..."
+sudo echo " " >> ~/.bashrc 
+sudo echo "alias xgo='killall Xephyr'" >> ~/.bashrc 
+
 sleep 5
 
 ### Install Kali base system utilities.
