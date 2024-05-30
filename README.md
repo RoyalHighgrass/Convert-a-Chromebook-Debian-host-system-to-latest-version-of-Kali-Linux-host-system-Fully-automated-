@@ -26,7 +26,7 @@ Although designed for Chromebook users, it is very likely that it will work fine
 4 - Shutdown device.
 
 5 - Turn on device.
-**note** - None Chromebook users should be taken straight to the *kali xfce4 desktop* when the system is booted, although this is where any problems are likely to occur. Uncommenting line 101 and starting the process again may possibly resolve your issue.
+**note** - None Chromebook users should be taken straight to the *kali xfce4 desktop* when the system is booted, although this is where any problems are likely to occur. Uncommenting line 106 and starting the process again may possibly resolve your issue.
 **note** - Start Penguin if using a Chromebook. Launch kali xfce4 desktop with *gox* terminal command. ( **gox** ).
 **note** - Once the *xfce4 desktop* has launched, click on the menu button & search for '**Synaptic Package Manager**', right click on it & select '*Edit application*'. Replace existing command with '*gox_lauch*'. Click save. Now *SPM* can properly be used to install & uninstall packages.
 
