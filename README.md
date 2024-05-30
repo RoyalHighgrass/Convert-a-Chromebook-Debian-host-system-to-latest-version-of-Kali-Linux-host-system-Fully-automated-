@@ -8,6 +8,11 @@ Is a bash script, *designed specifically for Chromebook users*, automates the pr
 Although designed for Chromebook users, it is very possible that it will work fine on any debian system & comes with its own **Kali Linux xfce4 desktop environment** that can be launched or shutdown with a simple terminal command. Users of Debian systems not running on a Chromebook may possibly experience unexpected issues. If so please raise an issue for it so I can implement a fix for it.
 
 
+   **Backup your files before proceeding**
+
+
+
+
 # How to use:
 1 - Download '*chromebook_kali_config.sh*' script & place in your Debian linux home directory.
 **note** - Linux environment must already be setup if using a Chromebook.
@@ -21,7 +26,7 @@ Although designed for Chromebook users, it is very possible that it will work fi
 4 - Shutdown device.
 
 5 - Turn on device.
-**note** - None Chromebook users should be taken straight to the *kali xfce4 desktop* when the system is booted, although this is where any problems are likely to occur.
+**note** - None Chromebook users should be taken straight to the *kali xfce4 desktop* when the system is booted, although this is where any problems are likely to occur. Uncommenting line 101 and starting the process again may possibly resolve your issue.
 **note** - Start Penguin if using a Chromebook. Launch kali xfce4 desktop with *gox* terminal command. ( **gox** ).
 **note** - Once the *xfce4 desktop* has launched, click on the menu button & search for '**Synaptic Package Manager**', right click on it & select '*Edit application*'. Replace existing command with '*gox_lauch*'. Click save. Now *SPM* can properly be used to install & uninstall packages.
 
