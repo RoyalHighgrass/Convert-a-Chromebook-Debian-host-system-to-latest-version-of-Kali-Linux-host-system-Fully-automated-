@@ -78,7 +78,7 @@ sudo tee /usr/bin/kld > /dev/null << 'EOF'
 if ! pgrep -x "zsh" > /dev/null; then
     Xephyr -br -fullscreen -resizeable :20 &
     sleep 1
-    sudo -u hhh DISPLAY=:20 startxfce4 &> /dev/null &
+    sudo -u $get_new_username_input DISPLAY=:20 startxfce4 &> /dev/null &
 else
     echo " "
     echo "Terminate 'zsh' process to launch Kali Linux desktop!"
