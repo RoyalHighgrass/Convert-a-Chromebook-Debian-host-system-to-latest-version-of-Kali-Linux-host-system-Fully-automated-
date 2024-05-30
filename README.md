@@ -16,7 +16,7 @@ Although designed for Chromebook users, it is very possible that it will work fi
 
 3 - Execute file. ( **./chromebook_kali_config.sh** ).
 **note** - The entire process of a full host system conversion can take up to 3 hours or more depending on your system specs.
-**note** - User inputs regarding system configurations required at the start & roughly about an hour into the process. The process will be paused until user inputs are provided. Once provided the process will continue for at least another hour. Once complete, shutdown linux.
+**note** - User inputs regarding system configurations required at the start & roughly about an hour into the process. There the process will be paused until user inputs are provided. Once provided the process will continue for at least another hour. Once complete, shutdown linux.
 
 4 - Shutdown device.
 
