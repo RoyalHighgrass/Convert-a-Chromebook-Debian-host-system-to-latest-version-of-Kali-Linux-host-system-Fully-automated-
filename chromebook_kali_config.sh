@@ -122,17 +122,10 @@ echo " "
 echo "Installing Kali base system utilities...(this may likely take a while)..."
 echo " "
 sudo apt -y install tor traceroute xdotool iputils-ping
-sudo apt install kali-tools-crypto-stego -y
-sudo apt install kali-tools-database -y
-sudo apt install kali-tools-vulnerability -y
-sudo apt install kali-tools-web -y
-sudo apt install kali-tools-exploitation -y
-sudo apt install kali-tools-information-gathering -y
-sudo apt install kali-tools-passwords -y
-sudo apt install kali-tools-post-exploitation -y
-sudo apt install kali-tools-sniffing-spoofing -y
-sudo apt install kali-tools-social-engineering -y
-sudo apt install kali-tools-reverse-engineering -y
+sudo apt install -y kali-tools-crypto-stego kali-tools-database kali-tools-vulnerability \
+	kali-tools-web kali-tools-exploitation kali-tools-information-gathering \
+ 	kali-tools-passwords kali-tools-post-exploitation kali-tools-sniffing-spoofing \
+  	kali-tools-social-engineering kali-tools-reverse-engineering
 
 sleep 1
 
