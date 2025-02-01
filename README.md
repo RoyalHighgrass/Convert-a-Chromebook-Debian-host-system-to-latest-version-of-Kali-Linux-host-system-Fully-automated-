@@ -1,5 +1,5 @@
 # Convert-a-Chromebook-Debian-host-system-to-latest-version-of-Kali-Linux-host-system-Fully-automated
-The provided *'chromebook_kali_config.sh'* file is a bash script, *designed specifically for Chromebook users*, automates the process of converting the default Debian (Buster, Bullseye or Bookworm) Linux environment generally available with Chromebooks to a Kali Linux environment instead. This script was inspired by *Ruth Ake*'s youtube video titled '*Install Kali Linux On A Chromebook (No Rooting!)*'.
+The provided *'`chromebook_kali_config.sh`'* file is a bash script, *designed specifically for Chromebook users*, automates the process of converting the default Debian (Buster, Bullseye or Bookworm) Linux environment generally available with Chromebooks to a Kali Linux environment instead. This script was inspired by *Ruth Ake*'s youtube video titled '*Install Kali Linux On A Chromebook (No Rooting!)*'.
 
 Although designed for Chromebook users, it is very likely that it will work fine on any debian system & comes with its own **Kali Linux xfce4 desktop environment** with **zsh-autosuggestions** terminal intergration, that can be launched or shutdown with a simple terminal command. Users of Debian systems not running on a Chromebook may possibly experience unexpected issues. If so please raise an issue for it so I can implement a fix for it.
 
